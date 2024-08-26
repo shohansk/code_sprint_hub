@@ -52,3 +52,8 @@
 **Notes:**
 
 ***NB: For Doc (http://127.0.0.1:8000/)*** 
+
+##### For Deployment
+```shell
+mkdocs gh-deploy
+```
