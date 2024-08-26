@@ -1,0 +1,114 @@
+site_name: CodeSprint Hub
+# site_url: http://
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_signature: true
+            show_symbol_type_heading: true
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+theme:
+  name: material
+
+  features:
+    - content.code.copy
+    - header.autohide
+    - navigation.footer
+    - navigation.top
+
+  logo: images/favicon.ico
+  favicon: images/favicon.ico
+
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to system preference
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  # - Day One: Day1.md
+  # - Setup Configuration: setup_configuration.md
+  # - Deployment Instructions: 
+  #   - Staging: deployment/staging.md
+  #   - Production: deployment/production.md
+  #   - Standalone: deployment/standalone.md
+  - Python Practice: 
+    - Day One: python-practics/Day_1.md
+    - Day Two: python-practics/Day_2.md
+    - Day Three: python-practics/Day_3.md
+    - Day Four: python-practics/Day_4.md
+    - Day Five: python-practics/Day_5.md
+    - Day Six: python-practics/Day_6.md
+    - Day Seven: python-practics/Day_7.md
+    - Day Eight: python-practics/Day_8.md
+    - Day Nine: python-practics/Day_9.md
+    - Day Ten: python-practics/Day_10.md
+    - Day Eleven: python-practics/Day_11.md
+    - Day Twelve: python-practics/Day_12.md
+    - Day Thirteen: python-practics/Day_13.md
+    - Day Fourteen: python-practics/Day_14.md
+    - Day Fifteen: python-practics/Day_15.md
+    - Day Sixteen: python-practics/Day_16.md
+    - Day Seventeen: python-practics/Day_17.md
+    - Day Eighteen: python-practics/Day_18.md
+    - Day Nineteen: python-practics/Day_19.md
+    - Day Twenty: python-practics/Day_20.md
+    - Day Twenty-One: python-practics/Day_21.md
+    - Day Twenty-Two: python-practics/Day_22.md
+    - Day Twenty-Three: python-practics/Day_23.md
+    - Day Twenty-Four: python-practics/Day_24.md
+  - SQL:
+    - SQL Practice: SQL-practics/sql.md
+  - Discussion Topic:
+    - Discussion Topic: discussion-topics/topics.md
+ 
+
+extra:
+  social:
+    # - icon: fontawesome/icon="['fas', 'mug-hot']"
+# <font-awesome-icon :icon="['fas', 'mug-hot']" />
+      # link: https://code.lefttravel.com/vrs/backend/etl-vrs-analytics
+  generator: false 
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+copyright: Copyright &copy; Abdul Alim Shohan. All rights reserved.
